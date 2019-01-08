@@ -1,0 +1,982 @@
+body{
+	font-family: Helvetica;
+	width:100%;
+	min-width:1080px;
+	margin:0px;
+	color: #fff;
+	background-color: #111;
+}
+
+p{
+	font-size:20px;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+li{
+	list-style-type:none;
+}
+
+textarea{
+	margin-top: 5px;
+	border-radius: 3px;
+	border: 1px solid #000;
+	background-color: #fff;
+	height: 100px;
+	width: 310px;
+	max-height: 100px;
+	max-width: 310px;
+	background-color: #444;
+	color: #fff;
+	font-size: 12px;
+}
+
+table{
+	border-radius: 3px;
+}
+
+table tr{
+	height: 24px;
+}
+
+td{
+	width: 90px;
+	height: 18px;
+}
+
+.title-hori{
+	display: table;
+	width: 100%;
+	color: rgb(223,223,223);
+	height: 32px;
+	line-height: 32px;
+	font-size:14px;
+	font-weight: 400;
+	padding-left: 10px;
+	margin-bottom: 15px;
+	background-color:rgb(31,31,31);
+
+}
+
+.header{
+	height:50px;
+	color:#CCCCCC;
+	background-color:#333333;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+}
+
+.container{
+	width:1080px;
+	margin-right:auto;
+	margin-left:auto;
+	background-color: #111;
+}
+
+.clear{
+	clear: both;
+}
+
+.header-list{
+	margin-left:10px;
+	display: table;
+}
+
+.header-list li{
+	float:left;
+	margin-right:50px;
+}
+
+.header_index{
+	position: absolute;
+	top:50px;
+	left:120px;
+	text-align: left;
+	font-size: 28px;
+	color:#fff;
+	font-weight: 500;
+	width:100px; 
+}
+
+.header_content{
+	position: absolute;
+	top:40px;
+	left:220px;
+	text-align: left;
+	width:200px; 
+}
+
+.header_content p{
+	font-size: 14px;
+	color:#fff;
+	line-height: 21px;
+	text-indent: 2em;
+}
+
+.sign{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width:270px;
+	height:300px;
+	background-color: rgba(68,68,68,0.9); 
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#sign-logo{
+	height:100px;
+}
+
+.sign-form{
+}
+
+.login-input{
+	padding:11px 10px 11px 13px;
+	display: inline-block;
+	font-family: Helvetica, STHeiti;
+	font-size: 12px;
+	border:0px;
+	width:270px;
+}
+
+.bottom-radius{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.login-in{
+	margin-top: 10px;
+	font-size: 13px;
+	line-height: 38px;
+	background-color: rgba(70,175,95,0.9);
+	color: #fff;
+	border-radius: 2px;
+	border:0px;
+	width: 270px;
+	height: 38px;
+}
+
+.sign-in{
+	margin-top: 10px;
+	font-size: 13px;
+	line-height: 38px;
+	background-color: rgba(41,119,186,0.9);
+	color: #fff;
+	border-radius: 2px;
+	border:0px;
+	width: 270px;
+	height: 38px;
+}
+
+.top-radius{
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.PreXtopMainbar{
+	width: 100%;
+	min-width: 1080px;
+	height: 160px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;	
+}
+
+.column_L{
+	width: 720px;
+	float: left;
+}
+
+.column_R{
+	width: 330px;
+	float: right;
+}
+
+.column_R_1{
+	width: 330px;
+	height: 296px;
+}
+
+.column_R_2{
+	width: 330px;
+	height: 296px;
+}
+
+.news_pic{
+	width: 444px;
+	height: 296px;
+}
+
+.news_pic ul{
+	width: 444px;
+	height: 296px;
+}
+
+.news_title {
+	margin-left: 10px;
+	width: 266px;
+	height: 296px;
+	float: left;
+	position: relative;
+}
+
+.news_title ul{
+	color: #fff;
+	margin-left: 5px;
+	margin-top: -5px;
+	padding: 0px;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.news_box{
+	margin-top: 38px;
+	height: auto;
+	width: 690px;
+	border: 2px;
+	border-radius: 5px;
+	border-color: #666;
+	border-style: solid;
+	background-color: #222;
+}
+
+.news_box_title{
+	top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+	width: 500px;
+	text-align: center;
+}
+
+.news_box_authorAndTime{
+	height: 20px;
+	top: 45px;
+	margin-left: 400px;
+	margin-right: auto;
+	height: 20px;
+	width: 400px;
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+.news_box_content{
+	width:640px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+
+.news_box_content p{
+	text-indent: 2em;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.reply_box{
+	margin-top: 38px;
+	height: auto;
+	width: 330px;
+	border: 2px;
+	border-radius: 5px;
+	border-color: #666;
+	border-style: solid;
+	background-color: #222;
+}
+
+.reply_box_form{
+	width: 310px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reply_box_form_submit{
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 24px;
+	background-color: rgba(70,175,95,0.9);
+	color: #fff;
+	border-radius: 2px;
+	border:0px;
+	width: 50px;
+	height: 24px;
+	margin-left: 130px;
+}
+
+.reply_box_one{
+	border: 1px;
+	border-radius: 2px;
+	border-color: #777;
+	border-style: solid;
+	background-color: #333;
+	height: auto;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.reply_box_one_inf{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 288px;
+}
+
+.reply_box_one_inf span{
+	font-size: 12px;
+}
+
+.reply_box_one_con{
+	width: 288px;
+	text-indent: 2em;
+	margin-bottom: 10px;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-content{
+	background-color: rgb(15,15,15);
+	height: auto;
+}
+
+.guess_box{
+	width: 720px;
+	height:300px;
+	float: left;
+}
+
+.guess_box_1{
+	width: 340px;
+	height: 130px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	display: block;
+	background-color: #333333;
+	position: relative;
+	border-radius: 5px;
+}
+
+.guess_box_number{
+	width:60px;
+ 	height:20px;
+ 	position: absolute;
+ 	bottom:5px;
+ 	left:15px;
+ 	float:left;
+ 	font-size:15px;
+}
+
+.guess_box_number2{
+	width:100px;
+ 	height:15px;
+ 	position: absolute;
+ 	bottom:5px;
+ 	right:5px;
+ 	float:left;
+ 	font-size:10px;
+ 	text-align: right;
+}
+
+.guess_box_team1{
+ 	width:60px;
+ 	height:60px;
+ 	position: absolute;
+ 	top:5px;
+ 	left:50px;
+ 	float:left;
+} 
+
+.guess_box_team2{
+ 	width:60px;
+ 	height:60px;
+ 	position: absolute;
+ 	top:5px;
+ 	left:235px;
+  	float:left;
+}
+
+.guess_box_team1 img{
+	width:60px;
+	height:60px;
+} 
+
+.guess_box_team2 img{
+	width:60px;
+	height:60px;
+} 
+
+.guess_box_name1{
+ 	width:70px;
+ 	height:25px;
+ 	position: absolute;
+ 	top:65px;
+ 	left:45px;
+ 	text-align: center;
+} 
+
+.guess_box_name2{
+	width: 60px;
+ 	height: 25px;
+ 	position: absolute;
+ 	top: 65px;
+ 	left: 230px;
+  	text-align: center; 	
+}
+
+.guess_box_vs{
+ 	width: 100px;
+ 	height:45px;
+ 	position: absolute;
+ 	top: 20px;
+ 	left: 120px;
+  	text-align: center;
+  	font-size: 30px;	
+}  
+
+.guess_box_time{
+ 	width: 90px;
+ 	height: 25px;
+ 	position: absolute;
+ 	top: 65px;
+ 	left: 125px;
+  	text-align: center; 	
+} 
+
+.guess_box_button{
+ 	width: 135px;
+ 	height: 28px;
+ 	position: absolute;
+ 	top: 97px;
+ 	left: 100px;
+ 	text-align: center;	
+}
+
+.guess_box_2{
+	width: 690px;
+	height: 85px;
+	margin-left: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+	display: block;
+	background-color: #333333;
+	position: relative;
+	border-radius: 5px;
+}
+
+.guess_box_no{
+ 	width:65px;
+ 	height:25px;
+ 	position: absolute;
+ 	top:25px;
+ 	left:15px;
+ 	float:left;
+}
+
+.guess_box_team3{
+ 	width: 50px;
+ 	height: 50px;
+ 	position: absolute;
+ 	top: 5px;
+ 	left: 95px;
+  	float: left;
+}
+
+.guess_box_name3{
+ 	width:60px;
+ 	height:20px;
+ 	position: absolute;
+ 	top:55px;
+ 	left:90px;
+  	text-align: center;
+}
+
+.guess_box_vs2{
+ 	width: 40px;
+ 	height:40px;
+ 	position: absolute;
+ 	top: 20px;
+ 	left: 160px;
+ 	text-align: center;
+}
+
+.guess_box_team4{
+	width: 50px;
+ 	height: 50px;
+ 	position: absolute;
+ 	top: 5px;
+ 	left: 215px;
+}
+
+.guess_box_name4{
+ 	width: 60px;
+ 	height: 20px;
+ 	position: absolute;
+ 	top: 55px;
+ 	left: 210px;
+  	text-align: center;
+} 
+
+.guess_box_time2{
+ 	width: 130px;
+ 	height: 40px;
+ 	position: absolute;
+ 	top: 25px;
+ 	left: 280px;
+ 	text-align: center;
+}
+
+.guess_box_person_number{
+ 	width: 130px;
+ 	height: 35px;
+ 	position: absolute;
+ 	top: 15px;
+ 	left: 430px;
+}
+
+.guess_box_persent{
+ 	width: 120px;
+ 	height: 20px;
+ 	position: absolute;
+ 	top: 50px;
+ 	left: 430px;
+}
+
+.guess_box_button2{
+ 	width: 95px;
+ 	height: 30px;
+ 	position: absolute;
+ 	top: 25px;
+ 	left: 575px;
+ 	border-radius: 5px;
+ 	border: 1px solid;
+ 	text-align: center;
+ 	padding-top: 5px;
+ 	font-size: 18px;
+}
+
+.guess_mine_pic{
+	margin-top: 30px;
+	margin-left: 20px;
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-radius: 20px;
+}
+
+.guess_mine_inf{
+	margin-top: 30px;
+	margin-left: 20px;
+	width: 180px;
+	height: 80px;
+	float: left;
+	line-height: 27px;
+}
+
+.guess_mine_inf2{
+	margin-left: 20px;
+	margin-top: 20px;
+	height: 50px;
+	width: 92px;
+	float: left;
+	border-top: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+	border-right: 2px;
+	border-style: solid;
+	border-color: #ffffff;
+	text-align: center;
+	line-height: 27px;
+}
+
+.guess_mine_inf3{
+	margin-top: 20px;
+	height: 50px;
+	width: 92px;
+	float: left;
+	border-top: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+	border-right: 2px;
+	border-style: solid;	
+	border-color: #ffffff;
+	text-align: center;
+	line-height: 27px;
+}
+
+.guess_mine_inf4{
+	margin-top: 20px;
+	height: 50px;
+	width: 92px;
+	float: left;
+	border: 0px;
+	border-style: solid;	
+	border-color: #ffffff;
+	text-align: center;
+	line-height: 27px;
+}
+
+.guess_mine_team{
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.guess_mine_team2{
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	float: left;
+}
+
+.guess_mine_text{
+	width: 50px;
+	height: 30px;
+	margin-top: 17px;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+}
+
+.guess_box_4{
+	width: 650px;
+	height: 250px;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+	display: block;
+	background-color: #333333;
+	position: relative;
+	border-radius: 5px;
+}
+
+/*闫嘉琦*/
+
+.guess_box_4_team1{
+	width:100px;
+ 	height:100px;
+ 	position: absolute;
+ 	top:5px;
+ 	left:115px;
+ 	float:left;
+}
+
+.guess_box_4_name1{
+	width:80px;
+ 	height:25px;
+ 	position: absolute;
+ 	top:113px;
+ 	left:123px;
+ 	float:left;
+ 	text-align: center;
+}
+
+.guess_box_4_team2{
+	width:100px;
+ 	height:100px;
+ 	position: absolute;
+ 	top:5px;
+ 	left:435px;
+ 	float:left;
+}
+
+.guess_box_4_name2{
+	width:80px;
+ 	height:25px;
+ 	position: absolute;
+ 	top:113px;
+ 	left:447px;
+ 	float:left;
+	text-align: center;
+}
+
+.guess_box_4_vs{
+	width:75px;
+ 	height:60px;
+ 	position: absolute;
+ 	top:65px;
+ 	left:288px;
+ 	float:left;
+ 	text-align: center;
+}
+
+.guess_box_4_nameoftherace{
+	width:130px;
+ 	height:35px;
+ 	position: absolute;
+ 	top:15px;
+ 	left:260.5px;
+ 	float:left;
+ 	text-align: center;
+}
+
+.guess_box_4_numbers1up{
+	width:120px;
+ 	height:30px;
+ 	position: absolute;
+ 	top:150px;
+ 	left:90px;
+ 	float:left;
+ 	text-align: center;
+}
+
+.guess_box_4_numbers1down{
+	width:120px;
+ 	height:30px;
+ 	position: absolute;
+ 	top:190px;
+ 	left:90px;
+ 	float:left;
+ 	text-align: center;
+}
+
+.guess_box_4_numbers2up{
+	width:120px;
+ 	height:30px;
+ 	position: absolute;
+ 	top:150px;
+ 	left:440px;
+ 	float:left;
+ 	text-align: center;
+}
+
+.guess_box_4_numbers2down{
+	width:120px;
+ 	height:30px;
+ 	position: absolute;
+ 	top:190px;
+ 	left:440px;
+ 	float:left;
+ 	text-align: center;
+}
+
+.guess_box_4_guessbutton{
+	width:210px;
+ 	height:65px;
+ 	position: absolute;
+ 	top:150px;
+ 	left:220px;
+ 	float:left;
+ 	text-align: center;
+}
+
+.guess_box_3{
+	width: 650px;
+	height: 450px;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+	display: block;
+	position: relative;
+	border-radius: 5px;
+}
+
+.guess_box_3_history1{
+	width:270px;
+ 	height:120px;
+ 	position: absolute;
+ 	top:25px;
+ 	left:40px;
+ 	float:left;
+}
+
+.guess_box_3_history1_name{
+	width:50px;
+ 	height:25px;
+ 	position: absolute;
+ 	top:7.5px;
+ 	left:17px;
+ 	float:left;
+}
+
+.guess_box_3_history1_picture{
+	width:65px;
+ 	height:65px;
+ 	position: absolute;
+ 	top:45px;
+ 	left:11.5px;
+ 	float:left;
+}
+
+.guess_box_3_history1_time{
+	width:45px;
+ 	height:30px;
+ 	position: absolute;
+ 	top:6px;
+ 	left:216.5px;
+ 	float:left;
+}
+
+.guess_box_3_history1_points{
+	width:95px;
+ 	height:32.5px;
+ 	position: absolute;
+ 	top:5px;
+ 	left:97.5px;
+ 	float:left;
+}
+
+.guess_box_3_history1_words{
+	width:155px;
+ 	height:60px;
+ 	position: absolute;
+ 	top:47.5px;
+ 	left:97.5px;
+ 	float:left;
+}/*闫嘉琦*/
+
+.box_title{
+	background-color: #444;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: -5px;
+	padding-top: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.topic_box{
+	width: 350px;
+	border-radius: 5px;
+	border: 0px solid #333;
+	background-color: #333;
+	float: left;
+	height: 320px;
+	border-top-left-radius: 0px;
+}
+
+.topic_box ul{
+	line-height: 150%;
+	margin-top: 20px;
+	margin-left: -10px;
+	font-size: 12px;
+	line-height: 200%;
+}
+
+.topic_mine_text{
+	height: 30px;
+	margin-top: 7px;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	margin-left: 15px;
+}
+
+.mine_main{
+	padding-top: 10px;
+	width: 700px;
+	height: 200px;
+	background-color: #222;
+	border: 2px solid #333;
+	border-radius: 5px;
+}
+
+.mine_history{
+	margin-top: 10px;
+	line-height: 200%;
+	font-size: 12px;
+	height: 180px;
+	width: 690px;
+}
+
+.mine_history li{
+	width: 340px;
+	float: left;
+	display: block;
+}
+
+#tbTopic{
+	width: 260px;
+}
+
+#tbTopic tr{
+	height: 28px;
+}
+
+.footer{
+	margin-top: 30px;
+	width: 100%;
+	color: #CCCCCC;
+	background-color: #444444;
+	padding-top: 5px;
+	float: left;
+}
+
+.footer-bottom{
+	color: #CCCCCC;
+	background-color: #444444;
+	height: 30px;
+	padding-top: 5px;
+}
+
+.footer-bottom p{
+	text-align: center;
+	font-size: 12px;
+}
+
+.reply_box_one_cuppicture{
+	width:80px;
+ 	height:80px;
+	position: relative;
+ 	top:8px;
+ 	left:8px;
+ 	float:left;
+}
+
+.reply_box_one_cupname{
+	width:80px;
+ 	height:20px;
+	position: relative;
+ 	top:8px;
+ 	left:20px;
+ 	float:left;
+}
+
+.reply_box_one_cuptime{
+	width:80px;
+ 	height:20px;
+	position: relative;
+ 	top:8px;
+ 	right:10px;
+ 	float:right;
+ 	font-size: 12px;
+}
+
+.reply_box_one_cupdescribe{
+	width:160px;
+ 	height:50px;
+	position: relative;
+ 	top:15px;
+ 	right:15px;
+ 	float:right;
+}

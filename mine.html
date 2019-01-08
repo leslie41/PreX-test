@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PreX | 我的PreX</title>
+		<link rel="stylesheet" type="text/css" href="css/css1.css">
+	</head>
+	<body style="background-image: url(img/login/1.jpeg); background-repeat:no-repeat; background-size: cover; min-width:100%">
+
+
+	<div class="sign" style="z-index:0">
+			<div id="sign-logo">
+				<img src="img/logo.png" style="width:270px;">
+			</div>
+			<table class="sign-form" width="272px" style="visibility:visible; z-index:0; position:absolute" id="form1">
+				<tr>
+					<td align="center">登录</td>
+					<td align="center" onclick="form1()" class="sign-in" style="font-size: 15px; width: 100px">注册</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+				<form action="login.php" method="post">
+  					<input class="login-input top-radius" type="text" name="username" placeholder="帐号" style="border-bottom: 1px solid rgb(227,227,227)" required="required">
+  					<input class="login-input bottom-radius" type="password" name="password" placeholder="密码" required="required">
+  					<input class="login-in" type="submit" value="登录">
+				</form>
+					</td>
+				</tr>	
+			</table>
+			<table class="sign-form" width="272px" style="visibility:hidden; z-index:99; position:absolute" id="form2">
+				<tr>
+					<td align="center" onclick="form2()" class="login-in" style="font-size: 15px; width: 100px">登录</td>
+					<td align="center">注册</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+				<form action="register.php" method="post">
+  					<input class="login-input top-radius" type="text" name="username" placeholder="帐号" style="border-bottom: 1px solid rgb(277,277,277)" required="required">
+  					<input class="login-input bottom-radius" type="password" name="password" placeholder="密码" required="required">
+  					<input class="sign-in" type="submit" value="注册">
+				</form>
+					</td>
+				</tr>	
+			</table>
+	</div>
+	<script src="js/index.js" type="text/javascript"></script>
+	</body>
+</html>

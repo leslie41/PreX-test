@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PreX赛事竞猜官方网站</title>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/css1.css">
+		<link rel="stylesheet" type="text/css" href="css/css2.css">
+	</head>
+	<body>
+		<div class="header">
+				<ul class="header-list">
+					<li style="margin-top:-30px">
+						<img src="img/logo.png" width="180px">
+					</li>
+					<li>
+						<a href="index.html" style="margin-left:-10px">首页</a>
+					</li>								
+					<li>
+						<a href="guess.php">竞猜</a>
+					</li>
+					<li>
+						<a href="topic.html">话题</a>						
+					</li>
+					<li>
+						<a href="mine.php">我的PreX</a>						
+					</li>			
+				</ul>
+		</div>
+		<div class="main-content" style="height: auto">
+			<div class="PreXtopMainbar">
+				<div style="width:100%;height:160px;background: url('img/titlebg2.jpeg');background-position: center;">
+				</div>
+				<div class="header_index">话题
+				</div>
+				<div class="header_content">
+					<p>在这里你可以畅所欲言。</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="column_L">
+				<div style="margin-top: 38px; margin-bottom: 38px;">
+						<div class="title-hori title-box" style="width: 690px">
+							<img src="img/icon/资讯.png">
+						<a href="news.html">资讯</a>
+						</div>
+				</div>
+					<div class="news_box">
+						<div class="news_box_title">
+							<p>关于网站竞猜逻辑的解释</p>
+						</div>
+						<div class="news_box_authorAndTime">
+							<span>作者：</span><span>朱凌峰</span><span>时间：</span><span>2018-1-4</span>
+						</div>
+						<hr style="width:90% ">
+						<div class="news_box_content">
+							<p>1. 每个新用户都有100积分（p0）。</p>
+							<p>2. 每场比赛都能竞猜，使用的积分最小为0，最大为当前积分（p）。</p>
+    						<p>3. 每场比赛竞猜完成后，用户会获得100积分（p1,无论输赢）。</p>
+    						<p>4. 比赛结果出来后，结算——输了会失去使用的积分；赢了，使用的积分会加回来，并且获得数值为（使用积分／下注方总积分*另一方总积分）的积分。</p>
+    						<p>5. 正负值（a）为用户通过竞猜净赚的积分，从这个定义可以推导出计算公式：</p>
+    						<br>
+    						<p style="text-align: center">a = p – 100 *（n + 1） ，n为竞猜场数。</p>
+    						<br>
+    						<p>6. 位次为用户正负值在所有用户中的排名。</p>
+						</div>
+					</div>
+			</div>
+			<div class="column_R">
+				<div class="title-hori title-box" style="width: 330px; margin-bottom: 25px; margin-top: 38px">
+					<img src="img/icon/排名.png">
+					留言
+				</div>
+				<div class="reply_box">
+					<div class="reply_box_one">
+						<form action="php/review.php" method="post" class="reply_box_form">
+							<textarea></textarea>
+							<input type="submit" value="提交" class="reply_box_form_submit" accept="middle">
+						</form>						
+					</div>
+					<div class="reply_box_one">
+						<div class="reply_box_one_inf">
+							<span>闫嘉琦</span><span style="float: right">2017-12-31</span><span style="margin-left:5px">1楼</span>
+						</div>
+						<hr style="width: 90%">
+						<div class="reply_box_one_con">
+							新年快乐
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+				<ul class="header-list">
+					<li>
+						<a href="document/46.docx">46号文件</a>
+					</li>
+					<li>
+						<a href="faq.html">常见FAQ</a>						
+					</li>
+					<li>
+						<a href="#">关于我们</a>						
+					</li>
+					<li>
+						<a href="advice.html">投诉建议</a>						
+					</li>
+					<li>
+						<a href="jobs.html">招贤纳士</a>						
+					</li>										
+				</ul>
+			<div class="container">
+				<div class="footer-bottom">
+					<p>
+					Copyright&copy <span><a href="index.html">PreXgame.com</a></span> All rights reserved.
+					</p>
+				</div>
+			</div>			
+		</div>
+	</body>
+</html>
